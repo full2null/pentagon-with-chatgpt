@@ -17,7 +17,51 @@
 
 ## ChatGPT 질문
 
-![ChatGPT 질문](chatgpt.png)
+```text
+>>> Write a Python code which draws a pentagon, using turtle.
+```
+
+```text
+You can use the Turtle graphics library in Python to draw a pentagon. First, make sure you
+have the Turtle module installed. It's usually included in Python's standard library, so you
+don't need to install it separately.
+
+Here's a Python code that uses Turtle to draw a pentagon:
+```
+
+```python
+import turtle
+
+# Create a Turtle screen and a Turtle object
+wn = turtle.Screen()
+pentagon_turtle = turtle.Turtle()
+
+# Function to draw a pentagon
+def draw_pentagon():
+    for _ in range(5):
+        pentagon_turtle.forward(100)  # Adjust the length of sides as needed
+        pentagon_turtle.right(72)    # 360 / 5 = 72 degrees for each turn
+
+# Set up the Turtle's attributes
+pentagon_turtle.speed(1)  # You can adjust the drawing speed (1 = slowest, 10 = fastest)
+pentagon_turtle.penup()
+pentagon_turtle.goto(0, 0)  # Move to the starting position
+pentagon_turtle.pendown()
+
+# Draw the pentagon
+draw_pentagon()
+
+# Close the Turtle graphics window when clicked
+wn.exitonclick()
+```
+
+```text
+This code will create a Turtle graphics window, and when you run it, a Turtle will draw a
+pentagon. You can adjust the forward and right values to change the size and shape of
+the pentagon as desired.
+```
+
+[원본](chatgpt.png)
 
 더 정확한 답변을 얻기 위해 영어로 질문했습니다.
 
